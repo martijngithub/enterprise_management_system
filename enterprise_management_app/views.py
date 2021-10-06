@@ -30,3 +30,25 @@ def index(request):
 def perform_logout(request):
     logout(request)
     return HttpResponseRedirect("/")
+
+
+
+
+
+def departments(request):
+    return render(request, "departments.html")
+    
+
+
+
+
+def managers(request):
+    return render(request, "managers.html")
+
+def employees(request):
+    return render(request, "employees.html")
+
+
+
+
+
